@@ -36,8 +36,9 @@ jobs:
         uses: ./
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          comment-title: Test Results All
+          comment-title: Test Results All Show Output
           results-path: ./files/ab/*.trx
           allow-failed-tests: true
           show-test-output: true
+          only-show-failed-tests: false
      
