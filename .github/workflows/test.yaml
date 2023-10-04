@@ -30,4 +30,14 @@ jobs:
           comment-title: Test Results All
           results-path: ./files/ab/*.trx
           allow-failed-tests: true
+
+      - uses: actions/checkout@v3
+      - name: Test Results All Show Output
+        uses: ./
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          comment-title: Test Results All
+          results-path: ./files/ab/*.trx
+          allow-failed-tests: true
+          show-test-output: true
      
