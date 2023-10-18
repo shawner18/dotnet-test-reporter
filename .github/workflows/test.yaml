@@ -40,5 +40,6 @@ jobs:
           results-path: ./files/ab/*.trx
           allow-failed-tests: true
           show-test-output: true
-          only-show-failed-tests: false
+          show-failed-tests-only: false
+          
      
